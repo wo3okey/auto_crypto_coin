@@ -2,7 +2,7 @@
 sudo ./gradlew build<br>
 <hr>
 <b>[실행]</b><br>
-java -jar build/libs/생성된파일.jar<br>
+sudo java -jar build/libs/생성된파일.jar<br>
 <hr>
 <b>[상태확인]</b><br> 
 sudo netstat -nap | grep {port}<br>
