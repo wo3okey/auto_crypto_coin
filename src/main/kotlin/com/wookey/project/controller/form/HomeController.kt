@@ -15,12 +15,18 @@ class HomeController(private val homeService: HomeService) {
     @GetMapping("/")
     fun index(model: Model): String {
         model["title"] = "testTitle1"
-        return "index"
+        return "autoCryptoCoin"
     }
 
     @GetMapping("/balance")
-    fun test(model: Model): String {
+    fun getBalance(model: Model): String {
         model["title"] = "testTitle2"
         return "index"
+    }
+
+    @GetMapping("/test")
+    fun test(model: Model): String {
+        model["title"] = "testTitle2"
+        return "hello"
     }
 }
