@@ -1,8 +1,8 @@
 <b>[빌드]</b><br>
-sudo ./gradlew build<br>
+sudo ./gradlew bootWar<br>
 <hr>
 <b>[실행]</b><br>
-sudo java -jar build/libs/생성된파일.jar<br>
+sudo java -jar build/libs/생성된파일.war<br>
 <hr>
 <b>[상태확인]</b><br> 
 sudo netstat -nap | grep {port}<br>
