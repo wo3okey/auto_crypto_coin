@@ -13,7 +13,7 @@ import kotlin.collections.set
 @RestController
 class ApiController(private val homeService: HomeService) {
 
-    @GetMapping("/balance/{coin}")
+    @GetMapping("/{coin}/balance")
     @ResponseBody
     fun getBalance(model: Model, @PathVariable coin: String): Map<String, String> {
         var result: HashMap<String, String> = HashMap()
@@ -23,9 +23,9 @@ class ApiController(private val homeService: HomeService) {
         return result
     }
 
-    @GetMapping("/balance2/{coin}")
+    @GetMapping("/{coin}/profit")
     @ResponseBody
     fun getBalance2(model: Model, @PathVariable coin: String): String {
-        return homeService.getBalance(coin)
+        return homeService.getProfit(coin)
     }
 }

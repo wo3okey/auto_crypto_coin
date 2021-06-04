@@ -4,6 +4,7 @@
 
 <div ng-app="myApp" ng-controller="myCtrl">
     <h1>{{content}}</h1>
+    <h1>{{content2}}</h1>
 </div>
 
 <p>The $http service executes different functions on success and failure.</p>
